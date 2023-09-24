@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardTable"
+    android:padding="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="2dp"
+    android:background="@drawable/rectangle"
+    android:layout_marginRight="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <TextView
+        android:id="@+id/tableNo"
+        android:gravity="center"
+        android:layout_width="65dp"
+        android:layout_height="150dp"
+        android:maxLines="2"
+        android:text="@string/extra"
+        android:textSize="50sp"
+        android:background="#058B3D"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/first_time"
+        android:layout_toRightOf="@id/tableNo"
+        android:layout_toEndOf="@id/tableNo"
+        android:text="@string/_19_00"
+        android:layout_width="70dp"
+        android:layout_height="35dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_below="@id/first_time"
+        android:id="@+id/last_time"
+        android:layout_toRightOf="@id/tableNo"
+        android:layout_toEndOf="@id/tableNo"
+        android:text="@string/_19_00"
+        android:layout_width="70dp"
+        android:layout_height="35dp"/>
+    <TextView
+
+        android:id="@+id/tableCost"
+        android:textStyle="bold"
+        android:text="@string/ttl_800000"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/red"
+        android:layout_below="@id/tableNo"
+        android:layout_width="145dp"
+        android:layout_height="40dp">
+
+    </TextView>
+
+</RelativeLayout>

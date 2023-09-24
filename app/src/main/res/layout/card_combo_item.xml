@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/rectangle"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:textSize="15sp"
+        android:text="@string/chicken"
+        android:id="@+id/comboitemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:minLines="4"
+        android:maxLines="4"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardTable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="2dp"
+    android:gravity="center"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/rectangle"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/tableNo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#058B3D"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/extra"
+        android:textColor="@color/white"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/first_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableNo"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minLines="2"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/_19_00"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/last_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_time"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minLines="2"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/_19_00"
+        android:textColor="@color/red"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tableCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_time"
+        android:background="#6B6969"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minLines="2"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="@string/ttl_800000"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+</RelativeLayout>

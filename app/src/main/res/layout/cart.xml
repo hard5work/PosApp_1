@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="92"
+        android:fadeScrollbars="true"
+        android:padding="2dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/placeOrder"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="5dp"
+            tools:ignore="NestedWeights"
+            android:text="@string/placeOrder"
+            android:textColor="@color/white"
+            style="?attr/buttonStyle"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/cancelOrder"
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"
+            android:text="@string/cancelOrder"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="ButtonStyle" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

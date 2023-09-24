@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="bonfire.apps.pos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launchers"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launchers_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity android:name=".NotificationData"
+            android:label="Ready Items"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale">
+
+        </activity>
+        <activity
+            android:name=".activities.CombinationActivity"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale" />
+        <activity
+            android:name=".activities.TableActivity"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale" />
+        <activity
+            android:name=".activities.CartListActivity"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale" />
+        <activity
+            android:name=".activities.ListDishesActivity"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBarMain">
+
+        </activity>
+        <activity
+            android:name=".adapter.Checkings"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale" />
+        <activity
+            android:name=".activities.LoginAndServerActivity"
+            android:configChanges="screenSize|keyboardHidden|screenLayout|fontScale"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".ReadyNotificationClass"
+            />
+    </application>
+
+</manifest>

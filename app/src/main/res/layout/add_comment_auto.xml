@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/popTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/instruction"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+    <AutoCompleteTextView
+        android:layout_below="@+id/popTitle"
+        android:id="@+id/addcommentauto"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:hint="@string/addinst"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/addCom"
+        tools:ignore="UnusedAttribute" />
+    <Button
+        android:id="@+id/submitComment"
+        android:layout_below="@+id/addcommentauto"
+        android:background="@drawable/positive"
+        android:text="@string/submit"
+        android:textSize="20sp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

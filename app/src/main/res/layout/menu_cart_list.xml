@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menuCard"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="152dp">
+        <ImageView
+            android:id="@+id/menuImage"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:minWidth="150dp"
+            android:contentDescription="@string/imgdes"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/menu" />
+    <TextView
+        android:id="@+id/menuNameImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/chicken"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/menuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/chicken"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>

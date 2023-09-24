@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="100">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_menu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:scrollbarStyle="insideOverlay">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+
+        android:id="@+id/Buttons"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/cartItems"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="#636468"
+                android:gravity="center"
+                android:text="@string/cart"
+                android:textColor="@color/white" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/new_cart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="79"
+                android:scrollbarStyle="insideOverlay">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="6"
+                android:weightSum="100"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/sumAmount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:background="@color/cardbackground"
+                android:text="@string/totalAmount"
+                android:textColor="@color/red"
+                tools:ignore="NestedWeights" />
+            <TextView
+                android:layout_weight="10"
+                android:background="@color/blue"
+                android:text="@string/changeTable"
+                android:textColor="@color/white"
+                android:id="@+id/changeTable"
+                android:layout_width="wrap_content"
+                android:paddingLeft="1dp"
+                android:gravity="center"
+                android:paddingRight="1dp"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/buttons2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/place_order"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="50"
+                        android:background="@color/greener"
+                        android:text="@string/placeOrder"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/cancel_cart_list"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="50"
+                        android:background="@color/red"
+                        android:text="@string/cancelOrder"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

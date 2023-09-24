@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="2dp"
+    android:layout_margin="3dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/changeServer"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/closeServer"
+            android:contentDescription="@string/imgdes"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_close_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bodyLayout"
+        android:layout_below="@id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textColor="@color/black"
+            android:hint="@string/server"
+            android:id="@+id/serverIP"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/router"
+            android:drawableStart="@drawable/router"
+            android:drawablePadding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/square_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/submitServer"
+            android:layout_below="@+id/serverIP"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/positive"
+            android:textSize="20sp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
